@@ -117,6 +117,8 @@ namespace CardGames.GameLogic
 			if (_gameTimer.Ticks > _flipTime) {	// Add by Chua Chung Long
 				_gameTimer.Reset ();			
 				FlipNextCard ();
+				SwinGame.LoadSoundEffectNamed ("Slap", "Resources/sounds/slap.wav"); //Add by Loh Yong Jun
+				SwinGame.PlaySoundEffect ("Slap"); //Add by Loh Yong Jun
 			}									// End by Chua Chung Long
 		}
 

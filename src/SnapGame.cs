@@ -30,6 +30,9 @@ namespace CardGames
 			if (myGame.IsStarted) {  //Add by Loh Yong Jun
 				if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) &&
 				SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
+					SwinGame.StopSoundEffect ("Slap");
+					SwinGame.LoadSoundEffectNamed ("Error", "Resources/sounds/error.wav"); //Add by Loh Yong Jun
+					SwinGame.PlaySoundEffect ("Error");									   //Add by Loh Yong Jun	
 					//TODO: add sound effects
 				} else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT)) {
 					myGame.PlayerHit (0);
