@@ -146,7 +146,7 @@ namespace CardGames.GameLogic
 				_score[player]++;
 				//TODO: consider playing a sound here...
 			}
-			else if (player >= 0 && player < _score.Length) {
+			else if (player >= 0 && player < _score.Length) { //Add by Loh Yong Jun
 				_score [player]--;
 			}
 			// stop the game...

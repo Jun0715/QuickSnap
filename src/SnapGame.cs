@@ -27,6 +27,16 @@ namespace CardGames
 				myGame.FlipNextCard ();
 				myGame.Start ();	//Add by Chua Chung Long
 			}
+			if (myGame.IsStarted) {  //Add by Loh Yong Jun
+				if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) &&
+				SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
+					//TODO: add sound effects
+				} else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT)) {
+					myGame.PlayerHit (0);
+				} else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
+					myGame.PlayerHit (1);
+				}
+			}
 		}
 
 		/// <summary>
